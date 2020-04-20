@@ -1,0 +1,11 @@
+.wrap {
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .container {
+    display: inline-block;
+    width: 40%;
+  }
