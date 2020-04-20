@@ -1,3 +1,8 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: mediumspringgreen;
+  }  
+
 .wrap {
     margin: 50px;
     display: flex;
@@ -8,4 +13,16 @@
   .container {
     display: inline-block;
     width: 40%;
+  }
+
+  .instructions {
+    margin-right: 50px;
+  }
+
+  button {
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: uppercase;
   }

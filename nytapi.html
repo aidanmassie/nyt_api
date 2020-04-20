@@ -6,10 +6,15 @@
         <link rel="stylesheet" href="nyt.css">
     </head>
     <body>
-        <div class="wrap">
 
-            <div class="container"></div>
-        </div>
+        <div class="wrap">
+            <div class="instructions">
+              <button type="button" class="listNYTimesData" value="Submit"></button>
+            </div>
+            <div class="container">
+              <div class="NYTimesData"></div>
+            </div>
+          </div>
 
 
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
@@ -17,7 +22,7 @@
         <script>
             (function(){
                 app.initialize();
-            });
+            })();
         </script>
     </body>
 </html>

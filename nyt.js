@@ -3,7 +3,9 @@ var app = {
 
 
 initialize: function() {
+    $('.listNYTimesData').click(function () {
     app.getNYTimesData();
+});
 },
 
 makeHTML: function() {
@@ -13,11 +15,12 @@ makeHTML: function() {
         theHTML += "<h3>" + app.nyTimesArticles[i].headline.main + "</h3>";
         theHTML += "</div>";
     }
+    $('.container').html(theHTML);
 },
 
 getNYTimesData: function() {
     console.log("get the data!");
-    var currentSearchWord = 'barack obama';
+    var currentSearchWord = 'basketball';
     var nyTimesURL = 'https://api.nytimes.com/svc/search/v2/articlesearch.json?q=' + currentSearchWord + '&page=0&sort=newest&api-key=';
     var myNYTKey = '7xW3IHuhgvzACfYTfh67yAXVrkChvGMA';
     var nyTimesReqURL = nyTimesURL + myNYTKey;
